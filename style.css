@@ -1,1 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:white;
+    color:black;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 70px;
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:900;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+#countdown{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.time-box{
+    animation:float 2s ease-in-out infinite;
+}
+
+.time-box span{
+    font-size:6rem;
+    font-weight:900;
+    color:black;
+    display:block;
+}
+
+.time-box p{
+    font-size:1rem;
+    letter-spacing:2px;
+}
+
+.contract-page{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.contract-page h1{
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+.contract-page img{
+    width:100%;
+    max-width:900px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.contract-text{
+    margin-top:30px;
+    font-size:1.3rem;
+    line-height:1.8;
+    font-weight:500;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
